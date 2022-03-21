@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'ABeeZee', sans-serif;
+    background:linear-gradient(30deg,#EECFBA,#C5DDE8);
+    background-repeat: no-repeat;
+   
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    width:100%;
+    
+    
+}
+.container_form{
+    max-width: 75%;
+    width:100%;
+    margin: auto;
+    margin-top: 5px;
+    background-color:rgb(238, 237, 237);
+    border:1px solid rgb(113, 145, 151);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card-date{
+    border:3px solid rgb(113, 145, 151);
+    max-width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#num-card{
+    width: 70%;
+}
+#login-btn{
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color:rgb(167, 216, 223);
+    border:none;
+    border-radius:4px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#link-back{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(54, 70, 85);
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    
+}
+#login-btn:active{
+    outline:1px solid rgb(41, 54, 56);
+    background:rgb(175, 209, 248);
+    
+}
+#login-btn:hover{
+    background-color:rgb(129, 165, 219);
+    cursor: pointer;
+}
+input{
+    display: block;
+    width: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom:20px;
+    font-size: 21px;
+    border-radius: 4px;
+    padding-left: 5px;
+    border:2px solid rgb(112, 111, 111);
+    color:#1B1D28;
+
+}
+#cvc, #year-card{
+    max-width: 31%;
+}
+#card1, #card2, #card3{
+    margin-right: 5px;
+    width: 40px;
+    display: inline-block;
+}
+.form-card{
+    display: inline-block;
+    width: 50%;
+}
+.img-card{
+    width: 145px;
+   
+   
+}
+.personal-date{
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+label{
+    font-size: 24px;
+    margin-bottom: 5px;
+    color:#1B1D28;
+}
+h1{
+    font-size: 32px;
+    font-weight: 500;
+    color:#1B1D28;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#span-cvc{
+    font-size: 13px;
+}
+.container-forgot{
+    max-width:20%;
+    margin: auto;
+    margin-top: 5px;
+    background-color:rgb(238, 237, 237);
+    border:1px solid rgb(113, 145, 151);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+#forgot-mail{
+    width: 70%;
+    margin: auto;
+    padding: 4px 5px;
+    font-size: 15px;
+    border:1px solid rgb(112, 111, 111);
+    margin-top: 10px;
+}
+#lab-forgot{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+#link-back-forg{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(54, 70, 85);
+    margin-left: 5%;
+    margin-top: 5px;
+    font-size: 19px;
+}
+#btn-send-forg{
+    width: 60%;
+    padding: 5px 0;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+.header_menu { 
+    position: relative; 
+    width: 35px; 
+    height: 25px; 
+  } 
+   .header_menu::before, 
+  .header_menu::after { 
+    content: ""; 
+    background-color: black; 
+    position: absolute; 
+    height: 2px; 
+    transition: all 0.3s ease 0s; 
+  } 
+  .header_menu::before { 
+      left: 0; 
+      width: 100%; 
+      top: 0; 
+    } 
+    .header_menu::after { 
+      left: 0; 
+      width: 100%; 
+      bottom: 0; 
+    } 
+   
+    .header_menu span { 
+      position: absolute; 
+      background-color: black; 
+      width: 100%; 
+      right: 0; 
+      height: 2px; 
+      top: 20px; 
+      transition: all 0.3s ease 0s; 
+    } 
+   
+    .active::before { 
+      width: 100%; 
+      transform: rotate(45deg); 
+      top: 11px; 
+    } 
+   
+   
+  .active::after { 
+    width: 100%; 
+    transform: rotate(-45deg); 
+    bottom: 13px; 
+  } 
+   
+  .active span { 
+    transform: scale(0); 
+  }
+  .modal{ 
+    position: fixed; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    top: 0; 
+}
+
+.none{
+    display: none;
+}
+.container_modal_forgot{
+    width: 20%;
+    height: 25vh;
+    background-color:white;
+    margin:  auto;
+    padding-top: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    border-radius:15px;
+}
+#info-code{
+    max-width:70%;
+    margin: auto;
+    margin-top: 10px;
+}
+#btn-ok{
+    max-width:50%;
+    padding: 5px 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    
+}
+
+.modal_img{ 
+    position: fixed; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    top: 0; 
+}
+.container_img{
+    width: 50%;
+    height: 60vh;
+    background-color:white;
+    margin:  auto;
+    padding-top: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius:15px;
+    
+
+}
+.none{
+    display: none;
+}
+#chose_pict{
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.block-avatar{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    
+}
+.avatar{
+    display: block;
+    width: 30%;
+    border: 1px solid rgb(0, 46, 77) 
+}
+.avatar:hover{
+    box-shadow: ;
+    cursor: pointer;
+}
+
+@media(max-width:990px){
+    .img-card{
+        width: 115px;
+    }
+    #card1, #card2, #card3{
+        scroll-margin-top: 5px;
+        width: 30px;
+        display: inline-block;
+    }
+    label{
+        font-size: 21px;
+    }
+    input{
+        font-size: 18px;
+    }
+    #span-cvc{
+        font-size: 11px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    #lab-forgot{
+        font-size: 16px;
+    }
+    #forgot-mail{
+        font-size: 12px;
+    }
+
+}
+@media(max-width:800px){
+    .img-card{
+        width: 100px;
+    }
+    #card1, #card2, #card3{
+        scroll-margin-top: 5px;
+        width: 25px;
+        display: inline-block;
+    }
+    label{
+        font-size: 19px;
+    }
+    input{
+        
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-bottom:12px;
+        font-size: 16px;
+        border-radius: 4px;
+        padding-left: 4px;
+        
+        color:#1B1D28;
+    
+    }
+    #cvc, #year-card{
+        font-size: 15px;
+    }
+    #span-cvc{
+        font-size: 9px;
+        
+    }
+    #info-code{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    #btn-ok{
+        max-width:50%;
+        padding: 3px 0;
+        margin-left: 25%;
+        margin-bottom: 10px;
+        font-size: 13px;
+        
+    }
+    .header_menu { 
+         
+        width: 25px; 
+        height: 15px; 
+      } 
+      .active::before { 
+        width: 100%; 
+        transform: rotate(45deg); 
+        top: 5px; 
+      } 
+     
+     
+    .active::after { 
+      width: 100%; 
+      transform: rotate(-45deg); 
+      bottom: 8px; 
+    } 
+}
+@media(max-width:735px){
+    #lab-forgot{
+        font-size: 13px;
+    }
+   
+}
+@media(max-width:680px){
+    h1{
+        font-size: 23px;
+        font-weight: 500;
+       
+        letter-spacing: 3px;
+       
+    }
+    input{
+        
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-bottom:12px;
+        font-size: 14px;
+       
+    
+    }
+    #link-back{
+       
+        margin-left: 8px;
+        margin-top: 5px;
+        font-size: 16px;
+        
+    }
+    label{
+        font-size: 16px;
+    }
+    #span-cvc{
+        font-size: 8px;
+        
+    }
+    #login-btn{
+        font-size: 16px;
+    }
+    #btn-send-forg{
+        width: 60%;
+        padding: 3px 0;
+        
+        margin-top: 15px;
+        margin-bottom: 10px;
+        
+        
+    }
+    #forgot-mail{
+        padding: 4px 4px;
+        font-size: 12px;
+    }
+    .container-forgot{
+        max-width: 25%;
+    }
+}
+@media(max-width:600px){
+    input{
+        border:1px solid rgb(112, 111, 111);
+        margin-bottom: 8px;
+    }
+    #link-back{
+       
+        margin-left: 8px;
+        margin-top: 5px;
+        font-size: 12px;
+        
+    }
+    label{
+        font-size: 14px;
+    }
+    #cvc, #year-card{
+        font-size: 12px;
+    }
+    #span-cvc{
+        font-size: 7px;
+        
+    }
+    .img-card{
+        width: 85px;
+    }
+    #card1, #card2, #card3{
+        
+        width: 20px;
+        
+    }
+    #num-card{
+        font-size: 12px;
+    }
+    #info-code{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    #btn-ok{
+        max-width:50%;
+        padding: 2px 0 ;
+        margin-left: 25%;
+        margin-bottom: 0px;
+        font-size: 11px;
+        
+    }
+    .header_menu { 
+         
+        width: 25px; 
+        height: 15px; 
+      } 
+      .active::before { 
+        width: 100%; 
+        transform: rotate(45deg); 
+        top: 5px; 
+      } 
+     
+     
+    .active::after { 
+      width: 100%; 
+      transform: rotate(-45deg); 
+      bottom: 8px; 
+    } 
+}
+@media(max-width:500px){
+   
+    #num-card{
+        font-size: 11px;
+    }
+    #cvc, #year-card{
+        font-size: 10px;
+    }
+    .img-card{
+        width: 63px;
+    }
+    #card1, #card2, #card3{
+        
+        width: 12px;
+        
+    }
+    input{
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+    #span-cvc{
+        font-size: 6px;
+        
+    }
+    label{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 18px;
+        margin-bottom: 15px;
+       
+    }
+    #forgot-mail{
+        padding: 4px 4px;
+        font-size: 10px;
+    }
+    #btn-send-forg{
+        width: 60%;
+        padding: 2px 0;
+        font-size: 11px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        
+        
+    }
+    #lab-forgot{
+        font-size: 11px;
+    }
+}
+@media(max-width:435px){
+    .img-card{
+        width:50px;
+    }
+    #card1, #card2, #card3{
+        margin-right: 2px;
+        width: 10px;
+        
+    }
+    label{
+        font-size: 10px;
+    }
+    #link-back{
+       
+        margin-left: 8px;
+        margin-top: 5px;
+        font-size: 10px;
+        
+    }
+    #num-card{
+        font-size: 10px;
+    }
+    #cvc, #year-card{
+        font-size: 9px;
+    }
+    #span-cvc{
+        font-size: 6px;
+        
+    }
+    input{
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+    h1{
+        font-size: 15px;
+        margin-bottom: 11px;
+       
+    }
+    .container-forgot{
+        max-width: 30%;
+    }
+    .container_modal_forgot{
+        width: 35%;
+     }
+}
+@media(max-width:380px){
+    #num-card{
+        font-size: 9px;
+    }
+    #cvc, #year-card{
+        font-size: 8px;
+    }
+    .img-card{
+        width:40px;
+    }
+    #card1, #card2, #card3{
+        margin-right: 2px;
+        width: 7px;
+        
+    }
+    label{
+        font-size: 9px;
+    }
+    #info-code{
+        font-size: 9px;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:330px){
+    label{
+        font-size: 8px;
+    }
+    #num-card{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    #cvc, #year-card{
+        font-size: 9px;
+        margin-bottom: 3px;
+    }
+}

@@ -1,0 +1,1103 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 375px;
+    font-family: 'ABeeZee', sans-serif;
+    margin: auto;
+    background:linear-gradient(30deg,#EECFBA,#C5DDE8);
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+
+img{
+    width: 100%;
+}
+.block-left img{
+    display: block;
+    margin-left: 0;
+}
+.block-left{
+    margin: 0;
+    width: 133px;
+    margin-right: 50px;
+}
+.flex-wrapper{
+    display: flex;
+    justify-content: left;
+}
+.block-right{
+    width: 190px;
+    padding-top: 35px;
+    margin-right: 22px;
+   
+}
+.head-block h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #282a38;
+    margin-right: 22px;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.head-block{
+    font-family: 'ABeeZee', sans-serif;
+    margin-bottom: 176px;
+    
+}
+#temper{
+    display: inline-block;
+    color:#1B1D28;
+    line-height: 154.3%;
+    font-size: 13px;
+    vertical-align:middle;
+}
+#date{
+    font-size: 13px;
+    color:#7B7F9E;
+    margin-top: 14px;
+}
+h1{
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color:#1B1D28;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+.eWalle-block p{
+    color:#7B7F9E;
+    font-size: 14px;
+    line-height: 154%;
+
+}
+#down-p-eWalle{
+    margin-top: 34px;
+}
+
+.sign-block a{
+    text-decoration:none;
+    color:#1B1D28;
+    font-size: 16px;
+    line-height: 154%;
+}
+
+    
+.head-block img{
+    max-width: 18px;
+} 
+
+#button-clik-size button{
+    background: none;
+    border: none;
+    width: 190px;
+    padding-top: 14px ;
+    padding-bottom: 14px ;
+    background-color: #FFAC30;
+    border-radius: 10px;
+    color:#212330;
+    font-size: 16px;
+    line-height: 154%;
+    text-decoration: none;
+}
+#button-clik-size :hover{
+    cursor: pointer;
+    background-color:#f7980a
+}
+button::after{
+    content: url(./images/array.svg);
+    margin-left: 7px;
+    vertical-align: center;
+}
+#button-clik-size{
+    margin-bottom: 33px;
+}
+.sign-block a {
+    text-align: center;
+}
+.modal{ 
+    position: fixed; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    top: 0; 
+}
+.container{
+    width: 40%;
+    height: 60vh;
+    background-color:white;
+    margin:  auto;
+    padding-top: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius:15px;
+    
+
+}
+.none{
+    display: none;
+}
+
+.header_menu { 
+    position: relative; 
+    width: 45px; 
+    height: 35px; 
+    
+    
+   
+  } 
+   .header_menu::before, 
+  .header_menu::after { 
+    content: ""; 
+    background-color: black; 
+    position: absolute; 
+    height: 2px; 
+    transition: all 0.3s ease 0s; 
+  } 
+  .header_menu::before { 
+      left: 0; 
+      width: 100%; 
+      top: 0; 
+    } 
+    .header_menu::after { 
+      left: 0; 
+      width: 100%; 
+      bottom: 0; 
+    } 
+   
+    .header_menu span { 
+      position: absolute; 
+      background-color: black; 
+      width: 100%; 
+      right: 0; 
+      height: 2px; 
+      top: 25px; 
+      transition: all 0.3s ease 0s; 
+    } 
+   
+    .active::before { 
+      width: 100%; 
+      transform: rotate(45deg); 
+      top: 11px; 
+    } 
+   
+   
+  .active::after { 
+    width: 100%; 
+    transform: rotate(-45deg); 
+    bottom: 23px; 
+  } 
+   
+  .active span { 
+    transform: scale(0); 
+  }
+  input{
+      display: block;
+  }
+  #forgot-link{
+      display: block;
+      text-decoration: none;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 20px;
+      color:rgb(53, 53, 58)
+  }
+.form-sign{
+    margin: 60px auto 0 50px;
+}
+#password-sign, #mail-sign{
+    width: 450px;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-bottom: 35px;
+    background-color:rgb(220, 237, 255);
+    font-weight: 400;
+    border: 1px black solid;
+    /* border:none; */
+    border-radius: 5px;
+    
+}
+#password-sign:active,
+#mail-sign:active{
+    outline:none;
+    border:none
+    
+}
+#login_btn{
+    width: 450px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color:rgb(161, 205, 255);
+    border:1px solid black;
+    outline: none;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#login_btn:active{
+    outline:1px solid rgb(77, 108, 114);
+}
+#login_btn:hover{
+    cursor: pointer;
+    background-color:rgb(140, 178, 221);
+}
+@media(max-width:2560px){
+   body{
+       max-width:2560px;
+   }
+    .sign-block a{
+        
+      
+        font-size: 22px;
+        
+    }
+    .block-right{
+        display: flex;
+        width: 2000px;
+        
+        height: 100%;
+        
+    }
+    #button-clik-size button{
+        font-size: 35px;
+        width: 350px;
+        padding-top: 20px ;
+        padding-bottom: 20px ;
+    }
+    .block-left{
+        display: inline-block;
+        width: 245px;
+        height: 100%;
+        
+    }
+    .eWalle-block img{
+        width: 300px;
+    }
+   
+   
+    .head-block{
+        margin-bottom: 90px;
+        
+    }
+    .head-block h2{
+        font-size: 45px;
+     
+        margin-right: 22px;
+        display: inline-block;
+        vertical-align:middle;
+    }
+    h1{
+        font-size: 60px;
+    }
+    #temper{
+        font-size: 28px;
+    }
+    #date{
+        font-size: 28px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 24px;
+        
+    
+    }
+    .eWalle-block {
+  
+        max-width: 500px;
+        
+    }
+    
+}
+@media(max-width:1440px){
+    body{
+        max-width: 1440px;
+    }
+    .sign-block a{
+        
+      
+        font-size: 22px;
+        
+    }
+    .block-right{
+        display: flex;
+        width: 750px;
+        
+        height: 100%;
+        
+    }
+    #button-clik-size button{
+        font-size: 25px;
+        width: 250px;
+       
+    }
+    .block-left{
+        display: inline-block;
+        width: 268px;
+        height: 100%;
+        
+    }
+    .eWalle-block img{
+        width: 220px;
+    }
+    #img-block4{
+        display: none;
+    }
+    #img-block5{
+        display: none;
+    }
+    #img-block6{
+        display: none;
+    }
+    .head-block{
+        margin-bottom: 90px;
+        
+    }
+    .head-block h2{
+        font-size: 45px;
+     
+        margin-right: 22px;
+        display: inline-block;
+        vertical-align:middle;
+    }
+    h1{
+        font-size: 60px;
+    }
+    #temper{
+        font-size: 28px;
+    }
+    #date{
+        font-size: 28px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 24px;
+        
+    
+    }
+    .eWalle-block {
+  
+        max-width: 500px;
+        
+    }
+    
+}
+@media(max-height:690px){
+    #password-sign, #mail-sign{
+        
+        padding: 8px 12px;
+        margin-bottom: 25px;
+        font-size: 18px;
+      
+    }
+    
+    .form-sign{
+        margin: 17px auto 0 50px;
+    }
+    #login_btn{
+        
+        padding: 8px 12px;
+        font-size: 18px;
+        
+      
+       
+        
+        margin-top: 20px;
+    }
+    #forgot-link{
+    
+        margin-top: 40px;
+        
+        font-size: 18px;
+        
+    }
+}
+
+@media(max-width:1350px){
+    #login_btn{
+        width: 400px;
+        padding: 10px 15px;
+        font-size: 20px;
+        
+      
+       
+        
+        margin-top: 20px;
+        
+    }
+    #forgot-link{
+    
+        margin-top: 40px;
+        
+        font-size: 20px;
+        
+    }
+  .form-sign{
+      margin: 60px auto 0 50px;
+  }
+  #password-sign, #mail-sign{
+      width: 400px;
+      padding: 10px 15px;
+   
+      
+    
+  }
+}
+@media(max-width:1230px){
+    #password-sign, #mail-sign{
+        width: 300px;
+        padding: 8px 12px;
+        margin-bottom: 25px;
+        font-size: 18px;
+      
+    }
+    
+    .form-sign{
+        margin: 17px auto 0 50px;
+    }
+    #login_btn{
+        width: 300px;
+        padding: 8px 12px;
+        font-size: 18px;
+        
+      
+       
+        
+        margin-top: 10px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 18px;
+        
+    }
+    
+    
+      
+}
+@media(max-height:630px){
+    #password-sign, #mail-sign{
+        
+        padding: 10px 12px;
+        margin-bottom: 20px;
+        font-size: 18px;
+      
+    }
+    
+    .form-sign{
+        margin: 20px auto 0 50px;
+    }
+    #login_btn{
+        
+        padding: 10px 12px;
+        font-size: 19px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 19px;
+        
+    }
+}
+@media(max-width:1100px){
+    .sign-block a{
+        
+      
+        font-size: 18px;
+        
+    }
+    .block-right{
+        display: flex;
+        width: 600px;
+        
+        height: 100%;
+        
+    }
+    #button-clik-size button{
+        font-size: 19px;
+        width: 200px;
+        
+       
+    }
+    .block-left{
+        display: inline-block;
+        width: 233px;
+        height: 100%;
+        
+    }
+    .eWalle-block img{
+        width: 150px;
+    }
+    .head-block{
+        margin-bottom: 70px;
+        
+    }
+    .head-block h2{
+        font-size: 34px;
+     
+        margin-right: 15px;
+        
+    }
+    h1{
+        font-size: 48px;
+    }
+    #temper{
+        font-size: 21px;
+    }
+    #date{
+        font-size: 21px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 21px;
+        
+    
+    }
+    .eWalle-block {
+        
+        max-width: 525px;
+        
+    }
+}
+@media(max-width:990px){
+    #password-sign, #mail-sign{
+        width: 270px;
+        padding: 9px 12px;
+        margin-bottom: 20px;
+        font-size: 17px;
+      
+    }
+    
+    .form-sign{
+        margin: 20px auto 0 50px;
+    }
+    #login_btn{
+        width: 270px;
+        padding: 9px 12px;
+        font-size: 18px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 19px;
+        
+    }
+}
+@media(max-width:880px){
+    #button-clik-size{
+        margin-bottom: 20px;
+    }
+    .sign-block a{
+        
+      
+        font-size: 15px;
+        
+    }
+    .block-right{
+        display: flex;
+        width: 450px;
+        
+      
+        
+    }
+    #button-clik-size button{
+        font-size: 15px;
+        width: 150px;
+        padding-top: 12px ;
+        padding-bottom: 12px ;
+       
+    }
+    .block-left{
+        display: inline-block;
+        width: 141px;
+        height: 100%;
+        
+    }
+    .eWalle-block img{
+        width: 130px;
+    }
+    .head-block{
+        margin-bottom: 50px;
+        
+    }
+    .head-block h2{
+        font-size: 32px;
+     
+        margin-right: 13px;
+        
+    }
+    h1{
+        font-size: 43px;
+    }
+    #temper{
+        font-size: 19px;
+    }
+    #date{
+        font-size: 19px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 19px;
+        
+    
+    }
+    .eWalle-block {
+        
+        max-width: 425px;
+        
+    }
+    #img-block4{
+        display: inline-block;
+    }
+    #password-sign, #mail-sign{
+        width: 240px;
+        padding: 9px 12px;
+        margin-bottom: 20px;
+        font-size: 17px;
+      
+    }
+    
+    .form-sign{
+        margin: 20px auto 0 40px;
+    }
+    #login_btn{
+        width: 240px;
+        padding: 9px 12px;
+        font-size: 18px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 18px;
+        
+    }
+}
+@media(max-width:780px){
+    #password-sign, #mail-sign{
+        width: 200px;
+        padding: 8px 12px;
+        margin-bottom: 20px;
+        font-size: 17px;
+      
+    }
+    
+    .form-sign{
+        margin: 20px auto 0 40px;
+    }
+    #login_btn{
+        width: 200px;
+        padding: 9px 12px;
+        font-size: 18px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 17px;
+        
+    }
+}
+@media(max-width:690px){
+    #password-sign, #mail-sign{
+        width: 170px;
+        padding: 8px 11px;
+        margin-bottom: 18px;
+        font-size: 17px;
+      
+    }
+    
+    .form-sign{
+        margin: 20px auto 0 35px;
+    }
+    #login_btn{
+        width: 170px;
+        padding: 8px 11px;
+        font-size: 18px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 17px;
+        
+    }
+}
+
+@media(max-width:666px){
+  
+    #button-clik-size{
+        margin-bottom: 20px;
+    }
+    .sign-block a{
+        
+      
+        font-size: 17px;
+        
+    }
+    .block-right{
+        display: flex;
+        width: 300px;
+        
+      
+        
+    }
+    #button-clik-size button{
+        font-size: 17px;
+        width: 170px;
+        padding-top: 12px ;
+        padding-bottom: 12px ;
+       
+    }
+    .block-left{
+        
+        width: 141px;
+        
+        
+    }
+    .eWalle-block img{
+        width: 110px;
+    }
+    .head-block{
+        margin-bottom: 40px;
+        
+    }
+    .head-block h2{
+        font-size: 28px;
+     
+        margin-right: 13px;
+        
+    }
+    h1{
+        font-size: 38px;
+    }
+    #temper{
+        font-size: 17px;
+    }
+    #date{
+        font-size: 17px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 17px;
+        
+    
+    }
+    .eWalle-block {
+        
+        max-width: 350px;
+        
+    }
+    .eWalle-block{
+        margin-bottom: 40px;
+    }
+    .block-right{
+        display: block;
+    }
+    .sign-block a{
+        text-align: left;
+    }
+}
+@media(max-width:590px){
+    #password-sign, #mail-sign{
+        width: 140px;
+        padding: 7px 11px;
+        margin-bottom: 18px;
+        font-size: 15px;
+      
+    }
+    
+    .form-sign{
+        margin: 25px auto 0 35px;
+    }
+    #login_btn{
+        width: 140px;
+        padding: 8px 11px;
+        font-size: 16px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 30px;
+        
+        font-size: 16px;
+        
+    }
+}
+@media(max-width:520px){
+    #button-clik-size{
+        margin-bottom: 14px;
+    }
+    .sign-block a{
+        
+      
+        font-size: 12px;
+        
+    }
+    .block-right{
+       
+        width: 200px;
+        
+      
+        
+    }
+    #button-clik-size button{
+        font-size: 15px;
+        width: 120px;
+        padding-top: 9px ;
+        padding-bottom: 9px ;
+       
+    }
+    .block-left{
+        
+        width: 110px;
+        margin-right: 35px;
+        
+    }
+    .eWalle-block img{
+        width: 100px;
+    }
+    .head-block{
+        margin-bottom: 35px;
+        
+    }
+    .head-block h2{
+        font-size: 22px;
+     
+        margin-right: 2px;
+        
+    }
+    h1{
+        font-size: 33px;
+    }
+    #temper{
+        font-size: 12px;
+    }
+    #date{
+        font-size: 12px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 13px;
+        
+    
+    }
+    .eWalle-block {
+        
+        max-width: 200px;
+        
+    }
+    .eWalle-block{
+        margin-bottom: 30px;
+    }
+    #down-p-eWalle{
+        margin-top: 20px;
+    }
+    #img-block6{
+        display: block;
+    }
+}
+@media(max-width:490px){
+    #password-sign, #mail-sign{
+        width: 110px;
+        padding: 7px 11px;
+        margin-bottom: 18px;
+        font-size: 13px;
+      
+    }
+    
+    .form-sign{
+        margin: 25px auto 0 28px;
+    }
+    #login_btn{
+        width: 110px;
+        padding: 8px 10px;
+        font-size: 15px;
+        
+      
+       
+        
+        margin-top: 13px;
+    }
+    #forgot-link{
+    
+        margin-top: 25px;
+        
+        font-size: 13px;
+        
+    }
+    .active::before { 
+        width: 100%; 
+        transform: rotate(45deg); 
+        top: 10px; 
+      } 
+     
+     
+    .active::after { 
+      width: 100%; 
+      transform: rotate(-45deg); 
+      bottom:15px;
+      
+    }
+    .header_menu { 
+        position: relative; 
+        width: 35px; 
+        height: 25px; 
+    } 
+    .container{
+        height: 50vh;
+    }
+}
+@media(max-width:400px){
+    #password-sign, #mail-sign{
+        width: 90px;
+        padding: 6px 11px;
+        margin-bottom: 18px;
+        font-size: 10px;
+      
+    }
+    
+    .form-sign{
+        margin: 20px auto 0 23px;
+    }
+    #login_btn{
+        width: 90px;
+        padding: 7px 11px;
+        font-size: 12px;
+        
+      
+       
+        
+        margin-top: 10px;
+    }
+    #forgot-link{
+    
+        margin-top: 20px;
+        
+        font-size: 11px;
+        
+    }
+    .container{
+        height: 45vh;
+    }
+}
+@media(max-width:375px){
+    #button-clik-size{
+        margin-bottom: 14px;
+    }
+    .sign-block a{
+        
+      
+        font-size: 12px;
+        
+    }
+    .block-right{
+       
+        width: 170px;
+        
+      
+        
+    }
+    #button-clik-size button{
+        font-size: 13px;
+        width: 110px;
+        padding-top: 9px ;
+        padding-bottom: 9px ;
+       
+    }
+    .block-left{
+        
+        width: 98px;
+        margin-right: 30px;
+        
+    }
+    .eWalle-block img{
+        width: 90px;
+    }
+    .head-block{
+        margin-bottom: 50px;
+        
+    }
+    .head-block h2{
+        font-size: 20px;
+     
+        margin-right: 8px;
+        
+    }
+    h1{
+        font-size: 32px;
+    }
+    #temper{
+        font-size: 12px;
+    }
+    #date{
+        font-size: 12px;
+
+    }
+    .eWalle-block p{
+        
+        font-size: 12px;
+        
+    
+    }
+    .eWalle-block {
+        
+        max-width: 150px;
+        
+    }
+    .eWalle-block{
+        margin-bottom: 45px;
+    }
+    #down-p-eWalle{
+        margin-top: 22px;
+    }
+    #img-block5{
+        display: block;
+    }
+}
